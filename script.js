@@ -875,3 +875,6 @@ function aiKeywordRisk(text) {
 
   return extraRisk; // number only
 }
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js");
+}
